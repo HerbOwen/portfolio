@@ -1,0 +1,11 @@
+
+.disgrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.fooite {
+    padding: 2rem; 
+}

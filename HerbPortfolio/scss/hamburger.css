@@ -1,0 +1,69 @@
+/*hamburger button*/
+button {
+  background: transparent;
+  border: 10px solid var(--clr-mainback-900, --clr-mainback-900);
+  border-radius: 1rem;
+}
+
+/* button one */
+.button-one {
+  --button-color: white;
+}
+
+.button-one .line {
+  transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+  transform-origin: center;
+}
+
+.button-one[aria-expanded=true] .line {
+  transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+}
+
+.button-one[aria-expanded=true] :is(.top, .bottom) {
+  y: 45;
+}
+
+.button-one[aria-expanded=true] .top {
+  rotate: 45deg;
+}
+
+.button-one[aria-expanded=true] .middle {
+  opacity: 0;
+}
+
+.button-one[aria-expanded=true] .bottom {
+  rotate: -45deg;
+}
+
+@keyframes to-close-icon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+    rotate: calc(var(--rotation));
+  }
+  100% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+}
+@keyframes to-open-icon {
+  0% {
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}/*# sourceMappingURL=hamburger.css.map */

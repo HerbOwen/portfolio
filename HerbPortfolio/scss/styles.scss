@@ -1,0 +1,370 @@
+:root {
+    --clr-mainback-900: hsl(260, 11%, 5%); 
+    --clr-secondback-600: hsl(230, 9%, 13%); 
+     
+    --clr-spantxt-600: hsl(207, 72%, 45%); 
+    --clr-titles-500: hsl(0, 0%, 100%);  
+    --clr-bodytxt-300: rgb(201, 201, 201); 
+    --clr-neutral-100: hsl(0, 0%, 100%);  
+
+    --fw-regular-400: 500; 
+    --fw-bold-700: 700; 
+
+    --ff-popp: "Poppins", sans-serif; 
+}
+
+/*general styling*/
+
+/*css reset - Credit joshwcomeau.com*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.mt-1 {
+  margin-top: .10rem; 
+}
+
+.mt-2 {
+  margin-top: .125rem; 
+}
+
+.disflex {
+    display: flex; 
+}
+
+.aligncen {
+    align-items: center; 
+}
+
+.justcont {
+  justify-content: center; 
+}
+
+.jusconspcaro {
+    justify-content: space-between; 
+}
+
+.flxdirrow {
+  flex-direction: row; 
+}
+
+.flxdircol {
+  flex-direction: column; 
+}
+
+.gap5 {
+  gap: 4rem;
+}
+
+.clgray {
+  color: var(--clr-bodytxt-300)
+}
+
+body {
+    background-color: var(--clr-bodytxt-300);
+    font-family: var(--ff-popp); 
+    color: white; 
+}
+
+main {
+  background-color: var(--clr-mainback-900); 
+}
+
+.content {
+  margin-top: 88px; 
+}
+
+/*main page */
+
+.supermain {
+  background-color: white; 
+}
+
+.supermainthree {
+  width: 33%; 
+}
+
+.biomai {
+  width: 100%; 
+}
+
+
+
+.hd-span {
+  color:hsl(207, 72%, 45%); 
+}
+
+.container-onsmall {
+  flex-direction: column; 
+  align-items: center; 
+  margin-bottom: 1.75rem; 
+}
+
+.container-onlarge {
+  background-color:hsl(230, 9%, 13%); 
+  margin-top: 1rem; 
+  border-top: 1px solid var(--clr-bodytxt-300);
+  border-bottom: 1px solid var(--clr-bodytxt-300);
+}
+
+.mt-catphr {
+  padding: 1.8rem 0; 
+  line-height: 1.75rem;
+}
+
+.pasforfro  {
+  letter-spacing: -.065rem; 
+}
+
+.joumasweb {
+  font-style: italic; 
+}
+
+.daplrgimg {
+  width: 120px;
+  height: 110px; 
+  margin-top: .85rem; 
+  margin-left: -6rem;
+
+  
+  padding-right: 15px;  
+}
+
+/*small socials*/
+
+.fblog1 {
+  width: 40px;
+  height: 45px;  
+}
+
+.twilog1 {
+  width: 45px; 
+  height: 45px; 
+}
+
+.ebalog1 {
+  width: 45px; 
+}
+
+/*card stuff*/
+
+.mascararea {
+  padding: 1rem;
+  border-radius: 10px;  
+}
+
+.carare {
+  background-color: var(--clr-mainback-900);
+  padding: 1rem; 
+  align-items: center;
+  justify-content: center; 
+  
+}
+
+.carbac {
+  background-color: var(--clr-secondback-600); 
+  padding: .85rem; 
+  border-radius: 1.25rem;
+  justify-content: center;
+  text-align: center; 
+}
+
+.cartex {
+  justify-content: center;
+  padding: 1rem 0rem;  
+}
+
+.cartexone {
+  border-radius: 10px 10px 0 0; 
+}
+
+.cartexradtwo {
+  border-radius: 0 0 10px 10px; 
+}
+
+.carimg {
+  border-radius: 1.25rem;
+  width: 200px; 
+}
+
+.carhea {
+  color: var(--clr-neutral-100); 
+  font-weight: var(--fw-bold-700);
+}
+
+.carcont {
+  color:var(--clr-bodytxt-300); 
+}
+
+#buttontwo > a {
+  text-decoration: none; 
+  color: var(--clr-neutral-100); 
+}
+
+.button-two {
+  background-color: var(--clr-spantxt-600);
+  color: var(--clr-neutral-100);
+  border: none; 
+  border-radius: 5px; 
+  padding: .35rem 5rem; 
+ 
+}
+
+.button-two:hover {
+  background-color:hsl(207, 72%, 35%); 
+  color: var(--clr-bodytxt-300);
+}
+
+/*Text on side of main page*/
+.biomai {
+  border: 1px solid red; 
+  display: flex; 
+  flex-direction: column; 
+  align-items:center; 
+  margin: 1rem; 
+  background-color: var(--clr-secondback-600);
+  border-radius: 10px; 
+  
+}
+
+.biosecmain {
+  padding: 1rem; 
+}
+
+@media screen and (max-width: 600px) {
+  .dapimg {
+    width: 115px; 
+    margin-bottom: 1.25rem; 
+  }
+
+  .daplrgimg {
+    display: none; 
+  }
+
+  .cartex {
+    font-size: .75rem; 
+  }
+
+  .carhea {
+    font-size: 1rem; 
+    padding: .75rem; 
+  }
+
+  .carcont {
+    max-width: 13rem; 
+    margin-top: -.25rem; 
+    line-height: 1.25rem; 
+  }
+
+  .button-two {
+    margin-top: 1rem; 
+    font-size: .85rem; 
+  }
+
+  .content {
+    margin-top: 70px; 
+  }
+
+  .supermain {
+    justify-content: center; 
+    background-color: var(--clr-mainback-900)
+  }
+
+  .supermainthree {
+    display: none; 
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container-onsmall {
+    display:none;  
+  }
+
+  .container-onlarge {
+    margin-top: 0rem; 
+  }
+
+  .lartxtpad {
+    padding:.75rem;  
+  }
+
+  .carbac {
+    padding: 1rem; 
+  }
+
+  .cartextwo {
+    padding: 0 1rem; 
+  }
+
+  .cartex {
+    font-size: .75rem; 
+    flex-direction: row;
+  }
+
+  .carhea {
+    margin-top: -1.35rem; 
+    font-size: 1.2rem; 
+    padding: .75rem; 
+  }
+
+  .carcont {
+    max-width: 15.5rem; 
+    margin-top: -.25rem; 
+    line-height: 1rem; 
+  }
+
+  .button-two {
+    margin-top: 1rem; 
+    font-size: .95rem; 
+    padding: .35rem 4rem; 
+  }
+
+  .imacen {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+}
+
+@media  screen and (min-width: 1000px) {
+
+}
+
+@media screen and (min-width: 1300px) {
+
+
+ 
+
+ 
+}

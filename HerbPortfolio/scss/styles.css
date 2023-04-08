@@ -1,0 +1,68 @@
+:root {
+  --clr-mainback-900: hsl(260, 11%, 5%);
+  --clr-secondback-600: hsl(230, 9%, 13%);
+  --clr-spantxt-600: hsl(207, 72%, 45%);
+  --clr-titles-500: hsl(0, 0%, 100%);
+  --clr-bodytxt-300: hsl(0, 0%, 79%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --fw-regular-400: 500;
+  --fw-bold-700: 700;
+  --ff-popp: "Poppins", sans-serif;
+}
+
+.disflex {
+  display: flex;
+}
+
+.aligncen {
+  align-items: center;
+}
+
+.justcon {
+  justify-content: center;
+}
+
+/*css reset - Credit joshwcomeau.com*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*general styling*/
+body {
+  background-color: var(--clr-mainback-900);
+  font-family: var(--ff-popp);
+}
+
+.hologo {
+  width: 175px;
+}/*# sourceMappingURL=styles.css.map */
